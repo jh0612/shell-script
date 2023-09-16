@@ -2,16 +2,16 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 #====================================================================#
-#   System Required: CentOS 6+, Debian8+, Ubuntu16+                 #
+#   System Required: CentOS 6+, Debian8+, Ubuntu16+ AWS Linux        #
 #   Description: One click adduser and deluser for linux            #
-#   Author: 翔翎 <https://blog.20120714.xyz>                         #
-#   问题：该脚本执行完新增用户后，在/etc/ssh/sshd_config中会将现有的除root#
-#        用户以外的用户SSH连接权限全部删除，需要手动添加文件中AllowUsers   #
+#   Author: Reiwaxr                                                 #
+#   问题：该脚本执行完新增用户后，在/etc/ssh/sshd_config中会将现有的除root    #
+#        用户以外的用户SSH连接权限全部删除，需要手动添加文件中AllowUsers      #
 #        这一行。                                                     #
-#        编辑：vi /etc/ssh/sshd_config                               #
-#        重启（必须执行）service sshd restart                          #
-#   问题：目前改了一下代码但是删除的时候/etc/ssh/sshd_config文件夹下      #
-#        被删除的用户不会删掉（AllowUsers个配置里）                     #
+#        编辑：vi /etc/ssh/sshd_config                                #
+#        重启（必须执行）service sshd restart                           #
+#   问题：目前改了一下代码但是删除的时候/etc/ssh/sshd_config文件夹下        #
+#        被删除的用户不会删掉（AllowUsers个配置里）                        #
 #====================================================================#
 
 echoType='echo -e'
